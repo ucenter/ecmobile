@@ -1,0 +1,39 @@
+{
+    "resultcode": "200",
+    "reason": "Success",
+    "result": {
+        "data": [{
+            "id": "61501",
+            "title": "青椒火腿西红柿",
+            "tags": "家常菜;10分钟内;晚餐;1-2人;番茄味;锅子;家常菜下酒菜",
+            "imtro": "晚上有点冷，不想出门，但是打开橱柜，只剩下一包火腿，一颗油麦菜，一个西红柿，两个青椒了，为了资源合理利用，不浪费，我决定自创一道绿色无污染的菜，所以青椒火腿西红柿就出炉了，下面把我的制作过程展示给大家，希望大家不要只学习这道菜，而是学习资源合理利用的方法，做个经济适用的宅女。",
+            "ingredients": "青椒,100g;西红柿,100g;火腿肠,100g;油麦菜,50g",
+            "burden": "油,适量;盐,适量;生姜,20g",
+            "albums": ["http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/t\/62\/61501_477875.jpg"],
+            "steps": [{
+                "img": "http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/s\/615\/61501_62189e482784b1f9.jpg",
+                "step": "1.把火腿、青椒、西红柿，生姜切好；"
+            },
+            {
+                "img": "http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/s\/615\/61501_5ce4f405f6e7d12d.jpg",
+                "step": "2.将油倒入加热后，放入生姜，放入火腿肠，一分钟后铲起放在小盘里；"
+            },
+            {
+                "img": "http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/s\/615\/61501_e67994e1a5749960.jpg",
+                "step": "3.倒入油，加热后将青椒放入炒至8分熟；"
+            },
+            {
+                "img": "http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/s\/615\/61501_44ff5c264d658802.jpg",
+                "step": "4.将西红柿倒入，然后放油麦菜和火腿，放调味品；"
+            },
+            {
+                "img": "http:\/\/juheimg.oss-cn-hangzhou.aliyuncs.com\/cookbook\/s\/615\/61501_635cf6e76c7cedf8.jpg",
+                "step": "5.放调味品，熟后起锅；"
+            }]
+        }],
+        "totalNum": 1,
+        "pn": 0,
+        "rn": 1
+    },
+    "error_code": 0
+}

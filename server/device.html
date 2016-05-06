@@ -1,0 +1,69 @@
+<style>
+	#devicepanel p{font-size:16px;}
+	#devicepanel p span{font-weight:600;}
+</style>
+<div id='devicepanel' class="grid">
+	<p>cordove:<span device-cordova></span></p>
+	<p>model:<span device-model></span></p>
+	<p>platform:<span device-platform></span></p>
+	<p>uuid:<span device-uuid></span></p>
+	<p>version:<span device-version></span></p>
+	<p>manufacturer:<span device-manufacturer></span></p>
+	<p>isVirtual:<span device-isVirtual></span></p>
+	<p>serial:<span device-serial></span></p>
+	<p>connection:<span connection></span></p>
+	<p>batterystatus:<span batterystatus></span></p>
+</div>
+
+
+<script>
+
+	//cordova-plugin-device
+	document.addEventListener("deviceready", function(){
+		$(function(){
+			$.when(
+				$('[device-cordova]').delay(1000).html(device.cordova)
+			).then(function(){
+				return $('[device-model]').delay(500).html(device.model)				
+			}).then(function(){
+				return $('[device-platform]').delay(500).html(device.platform);				
+			}).then(function(){
+				return $('[device-uuid]').delay(500).html(device.uuid);				
+			}).then(function(){
+				return $('[device-version]').delay(500).html(device.version);
+			}).then(function(){
+				return $('[device-manufacturer]').delay(500).html(device.manufacturer);
+			}).then(function(){
+				return $('[device-isVirtual]').delay(500).html(device.isVirtual);
+			}).then(function(){
+				return $('[device-serial]').delay(500).html(device.serial);
+			}).then(function(){
+				$('[connection]').delay(5000).html(checkConnection())
+			})
+		})
+	}, false);
+
+	//cordova-plugin-battery-status
+	window.addEventListener('batterystatus',function(status){
+		$(function(){
+			$('[batterystatus]').delay(4000).html("Level: " + status.level + " isPlugged: " + status.isPlugged);
+		})		
+	},false);
+
+	//cordova-plugin-network-information
+	function checkConnection() {
+	    var networkState = navigator.connection.type;
+	    var states = {};
+	    states[Connection.UNKNOWN]  = 'Unknown connection';
+	    states[Connection.ETHERNET] = 'Ethernet connection';
+	    states[Connection.WIFI]     = 'WiFi connection';
+	    states[Connection.CELL_2G]  = 'Cell 2G connection';
+	    states[Connection.CELL_3G]  = 'Cell 3G connection';
+	    states[Connection.CELL_4G]  = 'Cell 4G connection';
+	    states[Connection.CELL]     = 'Cell generic connection';
+	    states[Connection.NONE]     = 'No network connection';
+	    //alert('Connection type: ' + states[networkState]);
+	    return states[networkState];
+	}
+
+</script>

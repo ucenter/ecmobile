@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+
+    <script src="cordova.js"></script><!-- phantom library, needed for Cordova api calls, added during build -->
+    <script src="xdk/init-dev.js"></script><!-- normalizes device and document ready events, see README for details -->
+    <link rel="stylesheet" type="text/css" href="appframework/build/icons.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/build/af.ui.css" />
+    <link rel="stylesheet" href="style/app.css"/>
+    <script type="text/javascript" charset="utf-8" src="appframework/build/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/fastclick.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.shim.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.ui.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.actionsheet.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.animation.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.touchEvents.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.popup.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.drawer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.toast.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.animateheader.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.splashscreen.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.swipereveal.js"></script>
+    <script type="text/javascript" charset="utf-8" src="appframework/src/af.lockscreen.js"></script>
+    <script src="appframework/jquery-widgets/jquery.unveil.js"></script>
+    <script src="js/TouchSlide.js"></script>    
+    <script>    
+    $.afui.useOSThemes=false;
+    $.afui.loadDefaultHash=true;
+    $.afui.autoLaunch=false;
+    $.afui.isAjaxApp=true;
+    $.afui.setBackButtonText('返回');
+    //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
+    /* This function runs when the content is loaded.*/
+     $(document).ready(function(){
+        $.afui.launch();
+    });    
+    </script>
+    <script src="http://cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+<!--     // <script src="//cdn.bootcss.com/vue-resource/0.7.0/vue-resource.min.js"></script>
+    // <script src="http://cdn.bootcss.com/vue-async-data/1.0.2/vue-async-data.min.js"></script>
+    // <script src="http://cdn.bootcss.com/vue-router/0.7.11/vue-router.min.js"></script> -->
+    <script src='js/template-native.js'></script>
+    <script src="js/sha1.js"></script>
+    <!-- recommended location of your JavaScript code relative to other JS files -->
+    <script src="js/usermodel.js"></script>
+    <script src="js/app.js"></script>
+    <script src='js/menu.js'></script>       
+    
+</head>
+
+<body>
+    <div id="splashscreen" class='ui-loader heavy'>
+        App Framework
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+    <div class="view" id="mainview">
+        <header>
+            <h1>What</h1>
+            <a class="menuButton" data-left-menu="leftMenu" data-transition="reveal"></a>
+        </header>
+        <div class="pages">
+            <div data-left-drawer="leftMenu" class="panel" id="main" data-title="首页" data-selected="true">
+<!--                 <div class="search-item">
+                    <form name="search" action=''>
+                        <input type="search" name='keywords' value='' placeholder='商品关键词'>
+                        <button><i class="icon png search"></i></button>                        
+                    </form>
+                </div> -->
+                <div class="grid content"></div>
+                <div class="grid item-list"></div>
+                <p class="copyright">&copy;copyright simovision.cn</p>             
+            </div>
+            <div class="panel" id="list" data-title='商品列表'>
+                <div class="item-list"></div>
+            </div>
+            <div class="panel" id="category" data-title="商品分类">
+                <div class="search-item">
+                    <form name="search" action=''>
+                        <input type="search" name='keywords' value='' placeholder='商品关键词'>
+                        <button><i class="icon png search"></i></button>                        
+                    </form>
+                </div>
+                <div class="cart-list"></div>                  
+            </div>
+            <div class="panel" id="menu" data-title="菜谱"></div>
+            <div class="panel" id="cart" data-title='购物车'></div>
+            <div class="panel" id="user" data-title="用户中心">
+                <section class="profile">
+                    <img class="bg" src="imgs/pic_4.jpg" alt="">
+                    <div class="userHead">
+                        <img class="AbsoluteCenter" src="imgs/face.gif" alt="">
+                    </div>
+                    <div class="userInfo">
+                        <div class="AbsoluteCenter">
+                            <p>会员名称：test</p>
+                            <p>我的积分：2000</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <ul class="list inset">
+                        <li><a href="#userMyorder" data-transition='slide'>我的订单</a></li>
+                        <li><a href="#userMyaddress" data-transition='slide'>收货地址</a></li>
+                        <li><a href="#userMyfeedback" data-transition='slide'>信息反馈</a></li>
+                    </ul>
+                </section>
+                <p class="copyright">&copy;copyright simovision.cn</p>   
+            </div>
+            <div class="panel" id='userMyorder' data-title='我的订单'></div>
+            <div class="panel" id="userMyaddress" data-title='我的地址'></div>
+            <div class="panel" id='userMyfeedback' data-title='信息反馈'></div>
+
+        </div>
+        <footer>
+            <a href="#main" class="icon png home" data-transition="slide">首页</a>
+            <a href="#category" class="icon png list-ul" data-cate data-transition="slide">分类</a>
+            <a href="#menu-category" class="icon png menu" data-transition='fade'>菜谱</a>
+            <a href="#cart" class="icon png cart-plus" data-transition="slide">购物车<span class="af-badge up">0</span></a>
+            <a href="#user" class="icon png user"  data-transition="slide">我的</a>
+        </footer>
+        <nav id="leftMenu" style="z-index:5" data-include='leftnav.html'></nav>        
+    </div>
+
+    <div class="view" id="goodsView">
+        <div class="pages">
+            <div class="panel" id="goods" data-title="商品详情" data-transition='fade'>
+                <header>
+                    <a href="#" onclick='window.history.back()' class="backButton">返回</a>
+                    <h1>商品详情</h1>
+                    <a href="#main" class="button fr"><i class="icon png home"></i></a>
+                </header>
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="view" id="menuView">
+        <header>
+            <a href="#" onclick='window.history.back()' class="backButton">返回</a>
+            <h1>商品详情</h1>
+            <a href="#main" class="button fr"><i class="icon png home"></i></a>            
+        </header>
+        <div class="pages">
+            <!-- 分类页 -->
+            <div class="panel" id="menu-category" data-title="菜谱分类">
+                <div class="grid">
+                    <br>
+                    <form class="search-form" name="search-form">
+                        <input type="search" placeholder='菜谱名称'>
+                        <button type="submit"><i class="icon magnifier"></i></button>      
+                    </form>
+                    <div class="cate"></div>
+                </div>                            
+            </div>
+            <!-- 列表页 -->
+            <div class="panel" id="menu-search" data-title="菜谱查询" >
+                <div class="result" id="wrapper">
+                    <ul class="list vlist"></ul>
+                    <div class="more">
+                        <a href="button">查看更多</a>
+                    </div>   
+                </div>
+            </div>
+            <!-- 详情页 -->
+            <div class="panel" id="menu-detail" data-title='菜谱详情'></div>            
+        </div>
+    </div>
+
+
+    <div class="view" id="loginView">
+        <header>
+            <h1>用户登录</h1>
+            <a href="#register" class="icon reg" data-transition="invoke">快速注册</a>
+        </header>
+        <div class="pages">
+            <div class="panel" id="login" data-transition="invoke" data-footer='none'>
+                <br>
+                <div class="input-group">
+                    <input name="username" type="tel" placeholder="输入手机号">
+                    <input name="password" type="password" placeholder="输入密码">
+                </div>
+                <a class='button block green'  onclick="user.signUp()">登录</a>
+                <a class='button block green'  onclick="hasLogin()">模拟登录</a>
+                <a class='button block' href='#main' data-transition='up-reveal:dismiss'>取消</a>
+                <p>
+                    <a href="#">忘记密码?</a>
+                    <a style="float:right;" href="#register" data-transition="invoke">立即注册</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="view" id="registerView">
+        <header>
+            <h1>用户注册</h1>
+            <a href="#login" class="icon reg" data-transition="invoke">登录</a>
+        </header>
+        <div class="pages">
+            <div class="panel" id="register" data-transition="invoke" data-footer='none'>
+                <br>
+                <div class="input-group">
+                    <input type="tel" placeholder="输入手机号">
+                    <input type="tel" placeholder="再次输入手机号">
+                </div>  
+                <a class='button block green' href='#main' data-transition='up-reveal:dismiss'>注册</a>              
+            </div>
+        </div>
+    </div>
+
+<!-- 首页幻灯模板 -->
+<script id="mainTpl" type='text/html'>
+    <div id="focus" class="focus">
+        <div class="hd"><ul></li></div>
+        <div class="bd">
+            <div class="tempWrap"><ul>
+            <%for(var i=0;i<data.player.length;i++){%>
+                <li><img alt=""  class="lazyload" data-src="<%=data.player[i].photo.url%>"></li>
+            <%}%></ul>        
+            </div>
+        </div>
+    </div>    
+</script>
+
+<!-- 商品列表页模板 -->
+<script id="listTpl" type='text/html'>
+    <ul>
+    <%for (var i=0;i<data.length;i++) {%>
+        <li><a href="#goods/<%=data[i].goods_id%>" data-goods='<%=data[i].goods_id%>'>
+            <div class="img">
+                <img class="lazyload" data-src="<%=data[i].img.thumb%>" alt="<%=data[i].name%>">
+            </div>
+            <div class="info">
+                <h3><%=data[i].name%></h3>
+                <p><%=data[i].shop_price%></p>
+            </div>
+        </a></li>  
+    <%}%>
+    </ul>
+</script>
+
+<!-- 商品详情页模板 -->
+<script id="goodsTpl" type="text/html">
+    <%if(data){%>
+    <div class="scroller">
+        <div class="slide">
+            <ul>
+                <li><img alt="" src="<%=data.img.thumb%>"></li>                
+                <%for(var i=0;i<data.pictures.length;i++){%>
+                    <li><img alt="" src="<%=data.pictures[i].thumb%>"></li>
+                <%}%>                
+            </ul>
+        </div>                        
+    </div>
+    <div class="grid">
+        <div class="goodsName">
+            <h2><%=data.goods_name%></h2>
+            <p>描述</p>                        
+        </div>
+    </div>
+
+    <div class="grid">
+        <ul>
+            <li><span class="price"><%=data.shop_price%></span><span class="xl fr">月销10件</span></li>
+            <li class="pro-count"><span>数量：</span><div class="spinner">
+                <a href="#" class="decrease"><em>-</em></a><input type="tel" value='1'>
+                <a href="#" class="increase"><em>+</em></a>
+                </div>
+            </li>
+            <li></li>
+        </ul>
+    </div>                    
+
+    <div class="grid detail"></div>
+    <div class="cart-concern-btm-fixed">
+        <div class="concern-cart">
+            <a class="icon png star">关注</a>
+            <a href="#cart" class="icon png cart" >购物车<span class="af-badge">100</span></a>
+        </div>
+        <div class="action-list">
+            <a class="yellow-color" add-cart='<%=data.id%>'>加入购物车</a>
+            <a class="red-color" data-buy='<%=data.id%>'>立即购买</a>
+        </div>
+    </div> 
+    <%}%>   
+</script>
+
+<!-- 首页商品列表模板 -->
+<script id="indexListTpl" type="text/html">
+    <ul>
+        <%for(var i=0;i<data.length;i++){%>
+            <%for(var f=0;f<data[i].goods.length;f++){%>
+                <li><a href="#goods/<%=data[i].goods[f].id%>" data-goods='<%=data[i].goods[f].id%>'>
+                    <div class="img">
+                        <img class="lazyload" data-src="<%=data[i].goods[f].img.thumb%>" alt="<%=data[i].goods[f].name%>">
+                    </div>
+                    <div class="info">
+                        <h3><%=data[i].goods[f].name%></h3>
+                        <p><%=data[i].goods[f].shop_price%></p>
+                    </div>
+                </a></li>              
+            <%}%>
+        <%}%>
+    </ul>
+</script>
+
+<!-- 购物车模板 -->
+<script id="cartTpl" type="text/html">
+    <section>
+        <p class="message">
+            <i class="icon basket big"></i>  
+            <a href="#main" class="button block" data-transition='fade'>去逛会儿</a>         
+        </p>
+    </section>
+</script>
+
+
+
+
+
+
+<!-- 菜谱APP模板 -->
+    <script id="categoryTpl" type='text/html'>
+    <!-- 分类页模板 -->
+        <%for(var i=0;i<result.length;i++){%>
+        <legend><%=result[i].name%></legend>
+        <ul class="link">
+            <%for(var f=0;f<result[i].list.length;f++){%>
+            <li><a class="button" href="#menu-search/?<%=result[i].list[f].id%>" data-cid=<%=result[i].list[f].id%>><%=result[i].list[f].name%></a></li>
+            <%}%>
+        </ul>
+        <%}%>          
+    </script>
+
+    <script id='menuListTpl' type='text/html'>
+    <!-- 列表页模板 -->
+        <%for(var i=0;i<data.length;i++){%>
+        <li>
+            <a href="#menu-detail/?<%=i%>/<%=data[i].id%>" data-link='<%=i%>'>
+                <div class="pic"><img src="<%=data[i].albums[0]%>" alt=""/></div>
+                <div class="detail">
+                    <h4 class="title"><%=data[i].title%></h4>
+                    <p class="ingredients">原料：<%=data[i].ingredients%></p>
+                    <p class="tags">辅料：<i><%=data[i].burden%></i></p>
+                </div>
+            </a>
+        </li>
+        <%}%>
+    </script>
+
+    <script id='menuDetailTpl' type='text/html'>
+    <!-- 详情页模板 -->
+        <div class="grid menu-detail">
+            <p class="albums text-center">
+                <img src="<%=data.albums[0]%>" alt="">
+            </p>
+            <ul>
+                <li><div class="title"><span>菜谱：</span><b><%=data.title%></b></div></li>
+                <li><div class="ingredients"><span>主料：</span><%=data.ingredients%></div></li>
+                <li><div class="burden"><span>辅料：</span><%=data.burden%></div></li>                        
+                <li><div class="intro"><span>介绍：</span><%=data.intro%></div></li>
+                <li><div class="tags"><span>分类：</span><%=data.tags%></div></li>
+            </ul>
+            <%for(var i=0;i<data.steps.length;i++){%>
+            <div class="steps">
+                <div class="step-img"><img src="<%=data.steps[i].img%>" alt=""></div>
+                <div class="step-text"><%=data.steps[i].step%></div>
+            </div>
+            <%}%>
+        </div>  
+    </script>
+
+
+</body>
+</html>

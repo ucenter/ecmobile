@@ -1,0 +1,39 @@
+<section id='app'>
+    <p class="message">
+        <i class="icon basket big"></i>  
+        <a href="#main" class="button block" data-transition='fade'>去逛会儿</a>         
+    </p>
+    <p>{{h}}</p>
+    <p>{{b | json}}</p>
+    <p v-text='c | json 4'></p>
+</section>
+
+<script>
+	var vm = new Vue({
+		el:'#app',
+		data:{
+			h:'1',
+			b:'2'
+		},
+		ready:function(){
+			// this.$http.get('server/goodsCategory.json').then(function(res){
+			// 	console.log(this)
+			// 	res.status;
+			// 	res.headers();
+			// 	this.$set(this.b,res.data)
+			// },function(res){
+			// 	console.log(res)
+			// })	
+			$.when(
+				$.getJSON('server/goodsCategory.json')	
+			).then(function(res){
+				console.log(res)
+				vm.$set('b',res.status)
+				vm.$set('c',res.data)
+			})
+		}
+	})
+	new Vue({
+		
+	})
+</script>

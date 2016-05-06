@@ -1,0 +1,23 @@
+{
+	"categoryColor":[
+		{"color":"#003366"},
+		{"color":"#00CC33"},
+		{"color":"#330066"},
+		{"color":"#336633"},
+		{"color":"#339999"},
+		{"color":"#660033"},
+		{"color":"#666633"},
+		{"color":"#990066"},
+		{"color":"#003366"},
+		{"color":"#00CC33"},
+		{"color":"#330066"},
+		{"color":"#336633"},
+		{"color":"#339999"},
+		{"color":"#660033"},
+		{"color":"#666633"},
+		{"color":"#990066"}
+	],
+	"copyright":{
+		"html":"<p class='copyright'>&copy;copyright simovision.cn</p>"
+	}
+}

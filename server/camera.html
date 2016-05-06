@@ -1,0 +1,151 @@
+<div class="grid">
+    <p><a href="#" class="button" onclick='refreshCamera()'>刷新</a></p>
+	<a href='#' data-getpic class="button">拍照</a>
+	<a href="#" data-bropic class="button">浏览图片</a>
+    <a href="#" id='getpic' class='button block'>照片</a>
+    <a href="#" onclick='getCam()'>照相机</a>
+    <a href="#" onclick='getCode()'>二维码</a>
+    <div id='bdLocation'></div>
+	<div class="img">
+		<img id="smallImage" />
+        <img id="largeImage" />
+	</div>
+</div>
+
+
+<script>
+    function refreshCamera(){        
+        $.ajax({
+            url:'http://test.shizhencaiyuan.com/PHP/camera.html?'+Date.parse(new Date()),
+        }).then(function(res){
+            $($.afui.activeDiv).empty().delay(500).html(res)
+        })
+    }
+
+    document.addEventListener('deviceready',function(){
+        if (window.locationService) {
+            var noop = function(){}
+            window.counter=1;
+            window.clearInterval(window.timer);
+            window.timer = null;
+            window.timer = window.setInterval(function(){
+                window.locationService.getCurrentPosition(function(pos){
+                    //alert(JSON.stringify(pos.coords));
+                    var longitude = JSON.stringify(pos.coords.longitude);                    
+                    var latitude =  JSON.stringify(pos.coords.latitude); 
+                    document.getElementById('bdLocation').innerHTML = '<p>'+JSON.stringify(pos)+'</p><p>longitude:'
+                        +longitude+'latitude:'+latitude+'</p>'; 
+                    window.locationService.stop(noop,noop)
+                },function(e){
+                    window.locationService.stop(noop,noop)
+                });
+
+            },10000);                  
+        }
+    },false)
+
+
+    //二维码扫描
+    function getCode(){        
+       cordova.plugins.barcodeScanner.scan(
+          function (result) {
+              alert("We got a barcode\n" +
+                    "Result: " + result.text + "\n" +
+                    "Format: " + result.format + "\n" +
+                    "Cancelled: " + result.cancelled);
+          }, 
+          function (error) {
+              alert("Scanning failed: " + error);
+          }
+       );
+    }    
+    
+    function encode(){
+        cordova.plugins.barcodeScanner.encode(cordova.plugins.barcodeScanner.Encode.TEXT_TYPE, "http://www.nytimes.com", function(success) {
+            alert("encode success: " + success);
+          }, function(fail) {
+            alert("encoding failed: " + fail);
+          }
+        );        
+    }
+
+    function getCam(){
+       navigator.camera.getPicture(function(imageData){
+            var image = document.getElementById('Image');
+            image.src = "data:image/jpeg;base64," + imageData;
+        }, function(message){
+            alert('Failed because: ' + message);            
+        }, { quality: 50,
+            destinationType: Camera.DestinationType.DATA_URL
+        });
+    }
+
+    // function getCam(){
+    //    navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+    //         destinationType: Camera.DestinationType.DATA_URL
+    //     });
+
+    //     function onSuccess(imageData) {
+    //         var image = document.getElementById('Image');
+    //         image.src = "data:image/jpeg;base64," + imageData;
+    //     }
+
+    //     function onFail(message) {
+    //         alert('Failed because: ' + message);
+    //     }
+    // }    
+
+
+
+
+    document.addEventListener('deviceready', function(){
+    
+        pictureSource = navigator.camera.PictureSourceType;  
+        destinationType = navigator.camera.DestinationType;
+        $("[data-getpic]").on("click", capturePhoto);  
+        $("[data-bropic]").on("click", browsePhoto);  
+        
+        function capturePhoto() {  
+            
+            if (!navigator.camera) {  
+                alert("Camera API not supported", "Error");  
+                return;  
+            }  
+            navigator.camera.getPicture(onPhotoDataSuccess, onFail,{ 
+                quality: 50,
+                allowEdit: true,   
+                destinationType: destinationType.DATA_URL 
+            });  
+        }
+
+        function browsePhoto() {  
+            //alert("browsePhoto");  
+            navigator.camera.getPicture(onPhotoURISuccess, onFail,{ 
+                quality: 50,  
+                destinationType: destinationType.FILE_URI,  
+                sourceType: pictureSource.PHOTOLIBRARY 
+            });  
+        }  
+        //sourceType 0:Photo Library, 1=Camera, 2=Saved Album  
+        //encodingType 0=JPG 1=PNG  
+
+        function onFail(message) {  
+            alert('Response: ' + message);  
+        }         
+        
+        function onPhotoDataSuccess(imageData) {  
+            var smallImage = document.getElementById('smallImage');  
+            smallImage.style.display = 'block';  
+            smallImage.src = "data:image/jpeg;base64," + imageData;  
+        }  
+
+        function onPhotoURISuccess(imageURI) {  
+            var largeImage = document.getElementById('largeImage');  
+            largeImage.style.display = 'block';  
+            largeImage.src = imageURI;  
+        }        
+        
+        
+    }, false);  
+
+</script>

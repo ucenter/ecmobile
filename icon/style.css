@@ -1,0 +1,1422 @@
+[class^="icomoon-"], [class*=" icomoon-"] {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icomoon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.icomoon-music {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-search {
+	width: 0.9287109375em;
+}
+
+.icomoon-star {
+	width: 0.9287109375em;
+}
+
+.icomoon-star-o {
+	width: 0.9287109375em;
+}
+
+.icomoon-user {
+	width: 0.7861328125em;
+}
+
+.icomoon-film {
+	width: 1.0712890625em;
+}
+
+.icomoon-th-large {
+	width: 0.9287109375em;
+}
+
+.icomoon-close {
+	width: 0.7861328125em;
+}
+
+.icomoon-search-plus {
+	width: 0.9287109375em;
+}
+
+.icomoon-search-minus {
+	width: 0.9287109375em;
+}
+
+.icomoon-power-off {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-cog {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-trash-o {
+	width: 0.7861328125em;
+}
+
+.icomoon-home {
+	width: 0.9287109375em;
+}
+
+.icomoon-file-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-clock-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-road {
+	width: 1.0712890625em;
+}
+
+.icomoon-download {
+	width: 0.9287109375em;
+}
+
+.icomoon-arrow-circle-o-down {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-circle-o-up {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-inbox {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-play-circle-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-repeat {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-refresh {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-lock {
+	width: 0.642578125em;
+}
+
+.icomoon-headphones {
+	width: 0.9287109375em;
+}
+
+.icomoon-volume-off {
+	width: 0.4287109375em;
+}
+
+.icomoon-volume-down {
+	width: 0.642578125em;
+}
+
+.icomoon-volume-up {
+	width: 0.9287109375em;
+}
+
+.icomoon-qrcode {
+	width: 0.7861328125em;
+}
+
+.icomoon-tag {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-tags {
+	width: 1.0712890625em;
+}
+
+.icomoon-book {
+	width: 0.9287109375em;
+}
+
+.icomoon-bookmark {
+	width: 0.7138671875em;
+}
+
+.icomoon-print {
+	width: 0.9287109375em;
+}
+
+.icomoon-camera {
+	width: 1.0712890625em;
+}
+
+.icomoon-font {
+	width: 0.9287109375em;
+}
+
+.icomoon-bold {
+	width: 0.7861328125em;
+}
+
+.icomoon-italic {
+	width: 0.5712890625em;
+}
+
+.icomoon-text-width {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-image {
+	width: 1.0712890625em;
+}
+
+.icomoon-pencil {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-map-marker {
+	width: 0.5712890625em;
+}
+
+.icomoon-adjust {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-tint {
+	width: 0.5712890625em;
+}
+
+.icomoon-share-square-o {
+	width: 0.9287109375em;
+}
+
+.icomoon-check-square-o {
+	width: 0.9287109375em;
+}
+
+.icomoon-step-backward {
+	width: 0.5712890625em;
+}
+
+.icomoon-backward {
+	width: 0.9287109375em;
+}
+
+.icomoon-play {
+	width: 0.7861328125em;
+}
+
+.icomoon-pause {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-stop {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-forward {
+	width: 0.9287109375em;
+}
+
+.icomoon-step-forward {
+	width: 0.5712890625em;
+}
+
+.icomoon-eject {
+	width: 0.8583984375em;
+}
+
+.icomoon-chevron-left {
+	width: 0.7138671875em;
+}
+
+.icomoon-chevron-right {
+	width: 0.7138671875em;
+}
+
+.icomoon-plus-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-minus-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-times-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-check-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-question-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-info-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-crosshairs {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-times-circle-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-check-circle-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-ban {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-left {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-right {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-up {
+	width: 0.9287109375em;
+}
+
+.icomoon-arrow-down {
+	width: 0.9287109375em;
+}
+
+.icomoon-expand {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-compress {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-plus {
+	width: 0.7861328125em;
+}
+
+.icomoon-minus {
+	width: 0.7861328125em;
+}
+
+.icomoon-asterisk {
+	width: 0.9287109375em;
+}
+
+.icomoon-exclamation-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-gift {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-fire {
+	width: 0.7861328125em;
+}
+
+.icomoon-plane {
+	width: 0.7861328125em;
+}
+
+.icomoon-calendar {
+	width: 0.9287109375em;
+}
+
+.icomoon-magnet {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-retweet {
+	width: 1.0712890625em;
+}
+
+.icomoon-shopping-cart {
+	width: 0.9287109375em;
+}
+
+.icomoon-folder {
+	width: 0.9287109375em;
+}
+
+.icomoon-folder-open {
+	width: 1.0712890625em;
+}
+
+.icomoon-arrows-v {
+	width: 0.4287109375em;
+}
+
+.icomoon-bar-chart {
+	width: 1.142578125em;
+}
+
+.icomoon-cogs {
+	width: 1.0712890625em;
+}
+
+.icomoon-thumbs-o-up {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-thumbs-o-down {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-star-half {
+	width: 0.5em;
+}
+
+.icomoon-sign-out {
+	width: 0.9287109375em;
+}
+
+.icomoon-thumb-tack {
+	width: 0.642578125em;
+}
+
+.icomoon-sign-in {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-trophy {
+	width: 0.9287109375em;
+}
+
+.icomoon-upload {
+	width: 0.9287109375em;
+}
+
+.icomoon-lemon-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-phone {
+	width: 0.7861328125em;
+}
+
+.icomoon-square-o {
+	width: 0.7861328125em;
+}
+
+.icomoon-bookmark-o {
+	width: 0.7138671875em;
+}
+
+.icomoon-phone-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-unlock {
+	width: 0.9287109375em;
+}
+
+.icomoon-credit-card {
+	width: 1.0712890625em;
+}
+
+.icomoon-feed {
+	width: 0.7861328125em;
+}
+
+.icomoon-hdd-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-certificate {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hand-o-up {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hand-o-down {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-circle-left {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-circle-right {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-circle-up {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-circle-down {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-globe {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-wrench {
+	width: 0.9287109375em;
+}
+
+.icomoon-filter {
+	width: 0.7861328125em;
+}
+
+.icomoon-arrows-alt {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-group {
+	width: 1.0712890625em;
+}
+
+.icomoon-chain {
+	width: 0.9287109375em;
+}
+
+.icomoon-cloud {
+	width: 1.0712890625em;
+}
+
+.icomoon-flask {
+	width: 0.9287109375em;
+}
+
+.icomoon-paperclip {
+	width: 0.7861328125em;
+}
+
+.icomoon-floppy-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-bars {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-table {
+	width: 0.9287109375em;
+}
+
+.icomoon-magic {
+	width: 0.9287109375em;
+}
+
+.icomoon-money {
+	width: 1.0712890625em;
+}
+
+.icomoon-caret-down {
+	width: 0.5712890625em;
+}
+
+.icomoon-caret-up {
+	width: 0.5712890625em;
+}
+
+.icomoon-caret-left {
+	width: 0.357421875em;
+}
+
+.icomoon-caret-right {
+	width: 0.357421875em;
+}
+
+.icomoon-columns {
+	width: 0.9287109375em;
+}
+
+.icomoon-sort {
+	width: 0.5712890625em;
+}
+
+.icomoon-sort-desc {
+	width: 0.5712890625em;
+}
+
+.icomoon-sort-asc {
+	width: 0.5712890625em;
+}
+
+.icomoon-rotate-left {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-bolt {
+	width: 0.5em;
+}
+
+.icomoon-umbrella {
+	width: 0.9287109375em;
+}
+
+.icomoon-lightbulb-o {
+	width: 0.5712890625em;
+}
+
+.icomoon-cloud-download {
+	width: 1.0712890625em;
+}
+
+.icomoon-cloud-upload {
+	width: 1.0712890625em;
+}
+
+.icomoon-coffee {
+	width: 1.0712890625em;
+}
+
+.icomoon-cutlery {
+	width: 0.7861328125em;
+}
+
+.icomoon-file-text-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-building-o {
+	width: 0.7861328125em;
+}
+
+.icomoon-hospital-o {
+	width: 0.7861328125em;
+}
+
+.icomoon-ambulance {
+	width: 1.0712890625em;
+}
+
+.icomoon-fighter-jet {
+	width: 1.0712890625em;
+}
+
+.icomoon-beer {
+	width: 0.9287109375em;
+}
+
+.icomoon-h-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-plus-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-angle-double-left {
+	width: 0.5712890625em;
+}
+
+.icomoon-angle-double-right {
+	width: 0.5712890625em;
+}
+
+.icomoon-angle-double-up {
+	width: 0.642578125em;
+}
+
+.icomoon-angle-double-down {
+	width: 0.642578125em;
+}
+
+.icomoon-angle-left {
+	width: 0.357421875em;
+}
+
+.icomoon-angle-right {
+	width: 0.357421875em;
+}
+
+.icomoon-angle-up {
+	width: 0.642578125em;
+}
+
+.icomoon-angle-down {
+	width: 0.642578125em;
+}
+
+.icomoon-desktop {
+	width: 1.0712890625em;
+}
+
+.icomoon-laptop {
+	width: 1.0712890625em;
+}
+
+.icomoon-tablet {
+	width: 0.642578125em;
+}
+
+.icomoon-mobile {
+	width: 0.4287109375em;
+}
+
+.icomoon-circle-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-quote-left {
+	width: 0.9287109375em;
+}
+
+.icomoon-quote-right {
+	width: 0.9287109375em;
+}
+
+.icomoon-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-github-alt {
+	width: 0.9287109375em;
+}
+
+.icomoon-folder-o {
+	width: 0.9287109375em;
+}
+
+.icomoon-folder-open-o {
+	width: 1.0712890625em;
+}
+
+.icomoon-smile-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-frown-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-meh-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-keyboard-o {
+	width: 1.0712890625em;
+}
+
+.icomoon-terminal {
+	width: 0.9287109375em;
+}
+
+.icomoon-code {
+	width: 1.0712890625em;
+}
+
+.icomoon-star-half-empty {
+	width: 0.9287109375em;
+}
+
+.icomoon-location-arrow {
+	width: 0.7861328125em;
+}
+
+.icomoon-crop {
+	width: 0.9287109375em;
+}
+
+.icomoon-code-fork {
+	width: 0.5712890625em;
+}
+
+.icomoon-chain-broken {
+	width: 0.9287109375em;
+}
+
+.icomoon-question {
+	width: 0.5712890625em;
+}
+
+.icomoon-info {
+	width: 0.357421875em;
+}
+
+.icomoon-exclamation {
+	width: 0.357421875em;
+}
+
+.icomoon-superscript {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-subscript {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-eraser {
+	width: 1.0712890625em;
+}
+
+.icomoon-puzzle-piece {
+	width: 0.9287109375em;
+}
+
+.icomoon-microphone {
+	width: 0.642578125em;
+}
+
+.icomoon-microphone-slash {
+	width: 0.7861328125em;
+}
+
+.icomoon-shield {
+	width: 0.7138671875em;
+}
+
+.icomoon-calendar-o {
+	width: 0.9287109375em;
+}
+
+.icomoon-fire-extinguisher {
+	width: 0.7861328125em;
+}
+
+.icomoon-rocket {
+	width: 0.9287109375em;
+}
+
+.icomoon-chevron-circle-left {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-chevron-circle-right {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-chevron-circle-up {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-chevron-circle-down {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-html5 {
+	width: 0.7861328125em;
+}
+
+.icomoon-unlock-alt {
+	width: 0.642578125em;
+}
+
+.icomoon-bullseye {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-ellipsis-h {
+	width: 0.7861328125em;
+}
+
+.icomoon-ellipsis-v {
+	width: 0.2138671875em;
+}
+
+.icomoon-play-circle {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-minus-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-minus-square-o {
+	width: 0.7861328125em;
+}
+
+.icomoon-level-up {
+	width: 0.5712890625em;
+}
+
+.icomoon-level-down {
+	width: 0.5712890625em;
+}
+
+.icomoon-check-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-pencil-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-external-link-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-share-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-compass {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-caret-square-o-down {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-caret-square-o-up {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-caret-square-o-right {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-eur {
+	width: 0.5712890625em;
+}
+
+.icomoon-gbp {
+	width: 0.5712890625em;
+}
+
+.icomoon-dollar {
+	width: 0.5712890625em;
+}
+
+.icomoon-cny {
+	width: 0.5732421875em;
+}
+
+.icomoon-file {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-file-text {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-sort-alpha-asc {
+	width: 0.9287109375em;
+}
+
+.icomoon-sort-alpha-desc {
+	width: 0.9287109375em;
+}
+
+.icomoon-sort-numeric-asc {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-sort-numeric-desc {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-thumbs-up {
+	width: 0.9287109375em;
+}
+
+.icomoon-thumbs-down {
+	width: 0.9287109375em;
+}
+
+.icomoon-stack-overflow {
+	width: 0.7861328125em;
+}
+
+.icomoon-instagram {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-flickr {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-adn {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-bitbucket {
+	width: 0.7861328125em;
+}
+
+.icomoon-bitbucket-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-long-arrow-down {
+	width: 0.4287109375em;
+}
+
+.icomoon-long-arrow-up {
+	width: 0.4287109375em;
+}
+
+.icomoon-apple {
+	width: 0.7861328125em;
+}
+
+.icomoon-windows {
+	width: 0.9287109375em;
+}
+
+.icomoon-android {
+	width: 0.7861328125em;
+}
+
+.icomoon-foursquare {
+	width: 0.7138671875em;
+}
+
+.icomoon-trello {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-female {
+	width: 0.7138671875em;
+}
+
+.icomoon-male {
+	width: 0.5712890625em;
+}
+
+.icomoon-gittip {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-moon-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-bug {
+	width: 0.9287109375em;
+}
+
+.icomoon-pagelines {
+	width: 0.7861328125em;
+}
+
+.icomoon-stack-exchange {
+	width: 0.7138671875em;
+}
+
+.icomoon-arrow-circle-o-right {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-arrow-circle-o-left {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-caret-square-o-left {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-dot-circle-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-wheelchair {
+	width: 0.9287109375em;
+}
+
+.icomoon-plus-square-o {
+	width: 0.7861328125em;
+}
+
+.icomoon-space-shuttle {
+	width: 1.2138671875em;
+}
+
+.icomoon-slack {
+	width: 0.9287109375em;
+}
+
+.icomoon-envelope-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-bank {
+	width: 1.0711495535714284em;
+}
+
+.icomoon-graduation-cap {
+	width: 1.2861328125em;
+}
+
+.icomoon-stumbleupon {
+	width: 1.0712890625em;
+}
+
+.icomoon-delicious {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-building {
+	width: 0.7857142857142858em;
+}
+
+.icomoon-child {
+	width: 0.7138671875em;
+}
+
+.icomoon-paw {
+	width: 0.9287109375em;
+}
+
+.icomoon-spoon {
+	width: 0.4287109375em;
+}
+
+.icomoon-cube {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-cubes {
+	width: 1.2147042410714284em;
+}
+
+.icomoon-automobile {
+	width: 1.142578125em;
+}
+
+.icomoon-cab {
+	width: 1.142578125em;
+}
+
+.icomoon-tree {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-spotify {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-deviantart {
+	width: 0.5712890625em;
+}
+
+.icomoon-soundcloud {
+	width: 1.2861328125em;
+}
+
+.icomoon-database {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-file-image-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-file-archive-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-file-audio-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-file-movie-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-file-code-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-wechat {
+	width: 1.142578125em;
+}
+
+.icomoon-history {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-circle-thin {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-sliders {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-share-alt {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-share-alt-square {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-newspaper-o {
+	width: 1.142578125em;
+}
+
+.icomoon-wifi {
+	width: 1.142578125em;
+}
+
+.icomoon-calculator {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-cc-visa {
+	width: 1.2861328125em;
+}
+
+.icomoon-bell-slash {
+	width: 1.142578125em;
+}
+
+.icomoon-bell-slash-o {
+	width: 1.142578125em;
+}
+
+.icomoon-trash {
+	width: 0.7861328125em;
+}
+
+.icomoon-copyright {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-at {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-area-chart {
+	width: 1.142578125em;
+}
+
+.icomoon-line-chart {
+	width: 1.142578125em;
+}
+
+.icomoon-toggle-off {
+	width: 1.142578125em;
+}
+
+.icomoon-toggle-on {
+	width: 1.142578125em;
+}
+
+.icomoon-bicycle {
+	width: 1.2861328125em;
+}
+
+.icomoon-bus {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-ioxhost {
+	width: 1.142578125em;
+}
+
+.icomoon-angellist {
+	width: 0.7138671875em;
+}
+
+.icomoon-ils {
+	width: 0.7857142857142858em;
+}
+
+.icomoon-leanpub {
+	width: 1.142578125em;
+}
+
+.icomoon-sellsy {
+	width: 1.142578125em;
+}
+
+.icomoon-shirtsinbulk {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-simplybuilt {
+	width: 1.142578125em;
+}
+
+.icomoon-skyatlas {
+	width: 1.142578125em;
+}
+
+.icomoon-cart-plus {
+	width: 0.9287109375em;
+}
+
+.icomoon-cart-arrow-down {
+	width: 0.9287109375em;
+}
+
+.icomoon-diamond {
+	width: 1.142578125em;
+}
+
+.icomoon-ship {
+	width: 1.142578125em;
+}
+
+.icomoon-user-secret {
+	width: 0.7857142857142858em;
+}
+
+.icomoon-motorcycle {
+	width: 1.2861328125em;
+}
+
+.icomoon-street-view {
+	width: 0.7857142857142858em;
+}
+
+.icomoon-mars-stroke {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-mars-stroke-v {
+	width: 0.6424386160714286em;
+}
+
+.icomoon-mars-stroke-h {
+	width: 1.0711495535714284em;
+}
+
+.icomoon-neuter {
+	width: 0.6424386160714286em;
+}
+
+.icomoon-genderless {
+	width: 0.6424386160714286em;
+}
+
+.icomoon-whatsapp {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-user-plus {
+	width: 1.142578125em;
+}
+
+.icomoon-user-times {
+	width: 1.142578125em;
+}
+
+.icomoon-bed {
+	width: 1.142578125em;
+}
+
+.icomoon-viacoin {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-train {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-subway {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-mouse-pointer {
+	width: 0.6424386160714286em;
+}
+
+.icomoon-i-cursor {
+	width: 0.4998604910714286em;
+}
+
+.icomoon-sticky-note {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-sticky-note-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hourglass-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hourglass-1 {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hourglass-2 {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hourglass-3 {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hourglass {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hand-grab-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-hand-paper-o {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-hand-lizard-o {
+	width: 1.142578125em;
+}
+
+.icomoon-hand-spock-o {
+	width: 1.0711495535714284em;
+}
+
+.icomoon-hand-pointer-o {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-hand-peace-o {
+	width: 0.8571428571428572em;
+}
+
+.icomoon-get-pocket {
+	width: 0.9599609375em;
+}
+
+.icomoon-television {
+	width: 1.0711495535714284em;
+}
+
+.icomoon-calendar-plus-o {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-calendar-minus-o {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-calendar-times-o {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-calendar-check-o {
+	width: 0.9285714285714286em;
+}
+
+.icomoon-map-pin {
+	width: 0.5712890625em;
+}
+
+.icomoon-map-o {
+	width: 1.142578125em;
+}
+
+.icomoon-black-tie {
+	width: 0.8571428571428572em;
+}
